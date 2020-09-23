@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>ALBUM FAMILY</title>
+  <%- include ('./includes/head.html') %>
+  <link rel="stylesheet" type="text/css" href="/css/stylestarjet.css">
+  <script type="text/javascript" src="/js/event.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="header2">
+      <div class="col-8" id="logo">
+        <h1>NUESTRAS NAVIDADES...</h1>
+      </div>
+      <div class="col-3" id="photo">
+        <img src="/Img/Navidades/Nav.JPG" class="rounded-circle" alt="imagen1" />
+      </div>
+      <div class="col-1" id="bottom">
+        <a href='/index' class="btn btn-danger">HOME</a>
+      </div>
+    </div>
+    <div class="row" id="content">
+      <div class="col-5 mt-4" id="aside2">
+        <p>
+          Amamos estar en familia y sobre todo en epocas de diciembre siempre buscamos la oportunidad de reunirnos asi
+          estemos muy lejos.
+        </p>
+      </div>
+      <div id="slider" class="carousel slide mt-4 col-7" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slider" data-slide-to="0" class="active"></li>
+          <li data-target="#slider" data-slide-to="1"></li>
+          <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/Img/Navidades/Nav10.JPG" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2018 </h4>
+              <p>En el arbolito de la abuelita.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav11.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2018 </h4>
+              <p>Manuela y Julietica.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav12.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2018</h4>
+              <p>En el arbolito de la tia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav13.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2018</h4>
+              <p>En el arbolito de la tia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav17.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2019</h4>
+              <p>La tia y Lucianita</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav18.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2019</h4>
+              <p>La tia con las chiquitas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav19.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2019</h4>
+              <p>La tia con las chiquitas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav22.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2019</h4>
+              <p> Salida al centro comercial.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/Img/Navidades/Nav23.jpg" alt="navidad">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Navidad 2019</h4>
+              <p>De salida de almuerzo.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only"> Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only"> Siguiente</span>
+        </a>
+      </div>
+    </div>
+    <div class="row" id="footer2">
+      <div class="col-12">
+        <h1>"We didn't realize we were making memories we just knew we were having fun"</h1>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <%- include ('./includes/head.html') %>
+  <script>
+    $(document).ready(function () {
+      $(".carousel").carousel({
+        interval: 3000
+      });
+      $(".btn-tool").tooltip();
+
+      $(".btn-pop").popover();
+    });
+  </script>
+</body>

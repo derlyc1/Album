@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>LOGIN ALBUM FAMILY</title>
+    <%- include ('./includes/head.html') %>
+    <link rel="stylesheet" type="text/css" href="/css/styleslogin.css">
+
+</head>
+
+<body>
+    <header class="header content">
+        <div class="header-video">
+            <video src="/video/olas.mp4" muted autoplay></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="login-box">
+            <h1>LOGIN</h1>
+            <% if(message.length > 0) { %>
+                <div class="alert alert-danger">
+                   <%= message %>
+                </div>
+               <% } %>
+            <form action="/" method="POST" id="formulario">
+                <label for="email">Email:</label><br />
+                <input type="email" name="email" class="form-control" placeholder="email" id="user" /><br />
+    
+                <label for="password">Password:</label><br />
+                <input type="password" name="password" class="form-control" placeholder="contraseña" id="password" /><br />
+    
+                <input type="submit" value="Sign in" class="btn btn-dark btn-lg" id="submit"/><br />
+            </form>
+            <div id="registro">
+                <a href="/signup">Lost your password</a>
+            </div>
+        </div>
+    </header>
+    
+</body>
+
+</html>

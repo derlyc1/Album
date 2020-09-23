@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>ALBUM FAMILY</title>
+    <%- include ('./includes/head.html') %>
+    <link rel="stylesheet" type= "text/css" href="/css/stylesindex.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div class="logo">  
+                <h1>EVERY FAMILY HAS A STORY...</h1>
+                <h1>Welcome to Ours</h1>
+            </div>
+        </header>
+        <section id="content">
+            <aside id="aside">
+                <h2> Que quieres ver?</h2>
+                <ul>
+                    <li>
+                        <a href='/meetus'>MEET US</a>
+                    </li>
+                    <li>
+                        <a href="#">OUR PROYECTS</a>
+                    </li>
+                    <li>
+                        <a href="/logout">LOGOUT</a>
+                    </li>
+                </ul>
+            </aside>
+            <div id="projects">
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="/Img/Girls/Manuela/Manu1.JPG" alt="imagen1"/>
+                    </div>
+                    <div class="project-info">
+                        <p>Manuela</p>
+                        <a href='/manuela' class="btn btn-info">GO</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="/Img/Girls/Luciana/Luci27.JPG" alt="imagen2"/>
+                    </div>
+                    <div class="project-info">
+                        <p>Luciana</p>
+                        <a href='/luciana' class="btn btn-info">GO</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="/Img/Girls/Julieta/Juli15.JPG" alt="imagen3"/>
+                    </div>
+                    <div class="project-info">
+                        <p>Julieta</p>
+                        <a href='/julieta' class="btn btn-info">GO</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="/Img/Paseos/paseo14.jpg" alt="imagen4"/>
+                    </div>
+                    <div class="project-info">
+                        <p>Paseos</p>
+                        <a href='/paseos' class="btn btn-info">GO</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="/Img/Navidades/Nav7.JPG" alt="imagen5"/>
+                    </div>
+                    <div class="project-info">
+                        <p>Navidades</p>
+                        <a href='/navidad' class="btn btn-info">GO</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="/Img/Mas/Mas19.jpg" alt="imagen6"/>
+                    </div>
+                    <div class="project-info">
+                        <p>Mas</p>
+                        <a href='/mas' class="btn btn-info">GO</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <%- include ('./includes/footer.html') %>
+    </div>
+</body>
+</html>

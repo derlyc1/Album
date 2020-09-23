@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>SIGNUP ALBUM FAMILY</title>
+    <%- include ('./includes/head.html') %>
+
+</head>
+<body class="signup">
+    <div class="container">
+        <div class="col-sm-6 mx-auto">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h1 class="text-center">
+                        <span class="fa fa-sign-in"></span> Account Register
+                    </h1>
+                    <% if(message.length > 0) { %>
+                     <div class="alert alert-danger">
+                        <%= message %>
+                     </div>
+                    <% } %>
+
+                    <form action="/signup" method="POST">
+                        <div class="form-group">
+                            <label for="user">Email</label>
+                            <input type="email" name="email" placeholder= "email"class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">contraseña</label>
+                            <input type="password" name="password" placeholder = "contraseña" class="form-control">
+                        </div>
+                        
+                        <input type="submit" class="btn btn-dark">
+                    </form>
+                    <hr>
+                    <div class="text-center">
+                        <p>Already have an account? <a href="/">login</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
